@@ -2,8 +2,25 @@
 <!DOCTYPE videoclub SYSTEM "videoclub.dtd">
 
 <videoclub>
-    <peliculas>
+    <seccion nombre="fantasia"> 
+        <pelicula genero="fantasia">
+            <nombre>
+                El señor de los anillos
+            </nombre>
+            <duracion>
+                240 min
+            </duracion>
+            <adultos/>
+        </pelicula>
+    </seccion>
+    <seccion nombre="terror"> 
+        <pelicula>
 
+        </pelicula>
+    </seccion>
+    <seccion nombre="drama"> 
+        <pelicula>
 
-    </peliculas>
+        </pelicula>
+    </seccion>
 </videoclub>

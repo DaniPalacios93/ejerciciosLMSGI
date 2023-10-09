@@ -1,21 +1,17 @@
-<!ELEMENT videoclub (peliculas, clientes)>
-
-<!ELEMENT peliculas (pelicula)*>
-<!ELEMENT pelicula (nombre, actor+, duracion, disponible?, oferta)>
+<!ELEMENT videoclub (seccion)+>
+<!ELEMENT seccion (pelicula)*>
+<!ELEMENT pelicula (nombre, duracion, substitulos?, (adultos | familiar))*>
 <!ELEMENT nombre (#PCDATA)>
-<!ELEMENT genero (#PCDATA)>
-<!ELEMENT actor (#PCDATA)>
 <!ELEMENT duracion (#PCDATA)>
-<!ELEMENT disponible EMPTY>
-<!ELEMENT oferta (#PCDATA | basica | noAplica)*>
+<!ELEMENT substitulos (#PCDATA | espanol | ingles)*>
+<!ELEMENT adultos EMPTY>
+<!ELEMENT familiar EMPTY>
 
-<!ELEMENT clientes (cliente)*>
-<!ELEMENT cliente (#PCDATA)>
+<!ATTLIST seccion nombre ID #REQUIRED>
+<!ATTLIST pelicula genero IDREF #IMPLIED>
 
+<!ATTLIST adultos edad (mayoresDe7 | mayoresDe13 | mayoresDe18) #IMPLIED>
 
-<!ATTLIST pelicula  genero NMTOKEN
-                    edad_recomendada ID #REQUIRED>
-<!ATTLIST cliente   DNI ID #REQUIRED
-                    nombre NMTOKEN #IMPLIED.
-                    apellidos NMTOKENS #IMPLIED.>
-<!ATTLIST oferta vip #FIXED "50%">
+<!ATTLIST videoclub telefono CDATA #FIXED "987-987-987">
+
+<!ENTITY oferta "palomitas gratis con el alquiler de esta película">
