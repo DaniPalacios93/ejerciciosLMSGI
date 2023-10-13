@@ -1,0 +1,31 @@
+<!ELEMENT fruteria (fruta, verdura, ofertas)+>
+
+<!ELEMENT fruta (platanos, manzanas?, (uvas | sandia)+)>
+<!ELEMENT platanos EMPTY>
+<!ELEMENT manzanas EMPTY>
+<!ELEMENT uvas EMPTY>
+<!ELEMENT sandia EMPTY>
+
+<!ELEMENT verdura EMPTY>
+
+<!ELEMENT ofertas (#PCDATA | referencia)*>
+<!ELEMENT referencia EMPTY>
+
+
+
+<!ATTLIST fruteria  nombre CDATA #REQUIRED
+                    direccion CDATA #IMPLIED
+                    telefono CDATA #FIXED "555 345 244">
+
+<!ATTLIST verdura tipo (apio | brocoli | lechuga) #REQUIRED>
+<!ATTLIST fruta variedad IDREFS #IMPLIED>
+
+<!ATTLIST referencia tipoFruta IDREF #REQUIRED>
+
+<!ENTITY % codigoFruta "codigoFruta ID #REQUIRED">
+<!ATTLIST platanos %codigoFruta;>
+<!ATTLIST manzanas %codigoFruta;>
+<!ATTLIST uvas %codigoFruta;>
+<!ATTLIST sandia %codigoFruta;>
+
+<!ENTITY mejorPrecio "El mejor precio garantizado">

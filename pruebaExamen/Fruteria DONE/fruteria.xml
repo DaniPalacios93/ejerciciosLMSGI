@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fruteria SYSTEM "fruteria.dtd">
+<fruteria nombre="La banana" telefono="555 345 244">
+
+    <fruta variedad="pla man uv san">
+        <platanos codigoFruta="pla" />
+        <manzanas codigoFruta="man"/>
+        <uvas codigoFruta="uv"/>
+        <sandia codigoFruta="san"/>
+    </fruta>
+
+    <verdura tipo="brocoli"/>
+
+    <ofertas>2x1 &mejorPrecio;
+        <referencia tipoFruta="man"/>
+    </ofertas>
+
+</fruteria>
