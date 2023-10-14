@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bebidas [
-    <!ELEMENT bebidas (#PCDATA)>
-]>
-<bebidas>
-</bebidas>
+<!DOCTYPE licoreria SYSTEM "bebidas.dtd">
+<licoreria nombre="El cacharro" direccion="La de siempre" telefono="555 321 123">
+    <cocteles variedad="mar lon wisS">
+        <margarita codigo="mar"/>
+        <longIsland codigo="lon"/>
+        <wiskySolo codigo="wisS"/>
+    </cocteles>
+    <botella tamanio="grande"/>
+    <ofertas>2x1
+        <referencia articulo="mar" />
+    </ofertas>
+    <ofertas>el 3º gratis &especial;
+        <referencia articulo="wisS" />
+    </ofertas>
+</licoreria>

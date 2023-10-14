@@ -1,0 +1,29 @@
+<!ELEMENT licoreria (cocteles, botella, ofertas+)>
+
+<!ELEMENT cocteles (margarita, longIsland?, (wiskyHielo | wiskySolo))>
+<!ELEMENT margarita EMPTY>
+<!ELEMENT longIsland EMPTY>
+<!ELEMENT wiskyHielo EMPTY>
+<!ELEMENT wiskySolo EMPTY>
+
+<!ELEMENT botella EMPTY>
+
+<!ELEMENT ofertas (#PCDATA | referencia)*>
+<!ELEMENT referencia EMPTY>
+
+<!ATTLIST licoreria nombre CDATA #REQUIRED
+                    direccion CDATA #IMPLIED
+                    telefono CDATA #FIXED "555 321 123">
+
+<!ATTLIST cocteles variedad IDREFS #REQUIRED>
+
+<!ATTLIST botella tamanio (pequeña | mediana | grande) #IMPLIED>
+<!ATTLIST referencia articulo IDREF #REQUIRED>
+
+<!ENTITY % codigo "codigo ID #REQUIRED">
+<!ATTLIST margarita %codigo;>
+<!ATTLIST longIsland %codigo;>
+<!ATTLIST wiskyHielo %codigo;>
+<!ATTLIST wiskySolo %codigo;>
+
+<!ENTITY especial "OFERTA ESPECIAL, SOLO HOY">
