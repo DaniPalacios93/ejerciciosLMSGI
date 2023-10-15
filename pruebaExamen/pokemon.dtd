@@ -1,0 +1,30 @@
+<!ELEMENT pokemonMovie (personajes, combates)>
+
+<!ELEMENT personajes (personaje)+>
+<!ELEMENT personaje (nombre, edad, pokemon*, amigos?, (bueno | malo))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT pokemon (#PCDATA)>
+<!ELEMENT amigos EMPTY>
+<!ELEMENT bueno EMPTY>
+<!ELEMENT malo EMPTY>
+
+
+<!ELEMENT combates (#PCDATA | lugar)*>
+<!ELEMENT lugar EMPTY>
+
+
+<!ATTLIST pokemonMovie  nombre CDATA #REQUIRED
+                        numero CDATA #IMPLIED
+                        dueñoFranquicia CDATA #FIXED "Nintendo">
+                        
+<!ATTLIST personajes elenco IDREFS #REQUIRED>
+<!ATTLIST nombre aka ID #REQUIRED>
+<!ATTLIST amigos codAmigo IDREF #IMPLIED>
+
+<!ATTLIST lugar localizacion (playa | montaña | bosque) #REQUIRED>
+
+<!ENTITY favorito "El mejor pokemon del mundo">
+<!ENTITY % enemigo "enemigo IDREF #IMPLIED">
+<!ATTLIST bueno %enemigo;>
+<!ATTLIST malo %enemigo;>

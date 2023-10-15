@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokemonMovie SYSTEM "pokemon.dtd">
+<pokemonMovie nombre="pokemon y la venganza de mewtwo"  dueñoFranquicia="Nintendo">
+    <personajes elenco="gorras pelos pesao">
+        <personaje>
+            <nombre aka="gorras">ash</nombre>
+            <edad>10</edad>
+            <pokemon>Pikachu &favorito;</pokemon>
+            <pokemon>Bulbasaur</pokemon>
+            <pokemon>Charmander</pokemon>
+            <bueno />
+        </personaje>
+        <personaje>
+            <nombre aka="pelos">jessy</nombre>
+            <edad>23</edad>
+            <pokemon>Arbok</pokemon>
+            <amigos codAmigo="pesao"/>
+            <malo enemigo="gorras" />
+        </personaje>
+        <personaje>
+            <nombre aka="pesao">james</nombre>
+            <edad>23</edad>
+            <pokemon>Arbok</pokemon>
+            <amigos codAmigo="pelos"/>
+            <malo enemigo="gorras"/>
+        </personaje>
+    </personajes>
+    <combates>la pelea de la playa
+        <lugar localizacion="playa" />
+    </combates>
+</pokemonMovie>
