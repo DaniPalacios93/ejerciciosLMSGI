@@ -1,0 +1,31 @@
+<!ELEMENT ligaBalonmano (equipos, partidos)>
+<!ELEMENT equipos (equipo)+>
+<!ELEMENT equipo (nombre, localidad, entrenador?, (federado | noFederado))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT entrenador (#PCDATA)>
+<!ELEMENT federado EMPTY>
+<!ELEMENT noFederado EMPTY>
+
+
+<!ELEMENT partidos (partido)*>
+<!ELEMENT partido (equipoLocal, equipoVisitante)>
+<!ELEMENT equipoLocal (#PCDATA | victoria | derrota)*>
+<!ELEMENT equipoVisitante (#PCDATA | victoria | derrota)*>
+<!ELEMENT victoria EMPTY>
+<!ELEMENT derrota EMPTY>
+
+<!ATTLIST ligaBalonmano nombre CDATA #FIXED "Liga de campeones de Balonmano"
+                        anio CDATA #REQUIRED
+                        mascotaOficial CDATA #IMPLIED>
+
+<!ATTLIST equipos favoritos IDREFS #IMPLIED>
+<!ATTLIST equipo codEquipo ID #REQUIRED>
+
+<!ATTLIST partido tipoDePista (cesped | tierraBatida | cemento) #REQUIRED>
+
+<!ENTITY % nombreEquipo "nombre IDREF #REQUIRED">
+<!ATTLIST equipoLocal %nombreEquipo;>
+<!ATTLIST equipoVisitante %nombreEquipo;>
+
+<!ENTITY MVP "Mejor entrenador de la temporada">

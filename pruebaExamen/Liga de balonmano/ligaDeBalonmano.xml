@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaBalonmano SYSTEM "ligaDeBalonmano.dtd">
+<ligaBalonmano nombre="Liga de campeones de Balonmano" anio="2023">
+    <equipos favoritos="mbm bbs"> 
+        <equipo codEquipo="bbs">
+            <nombre>
+                betis balonmano
+            </nombre>
+            <localidad>
+                Sevilla
+            </localidad>
+            <entrenador>
+                Bartolo &MVP;
+            </entrenador>
+            <federado />
+        </equipo>
+        <equipo codEquipo="mbm">
+            <nombre>
+                madrid balonmano
+            </nombre>
+            <localidad>
+                madrid
+            </localidad>
+            <entrenador>
+                Juan Robledo
+            </entrenador>
+            <federado />
+        </equipo>
+        <equipo codEquipo="rcb">
+            <nombre>
+                real club de balonmano
+            </nombre>
+            <localidad>
+                Albacete
+            </localidad>
+            <noFederado/>
+        </equipo>
+    </equipos>
+    <partidos>
+        <partido tipoDePista="cesped">
+            <equipoLocal nombre="rcb">12 - 4
+                <victoria />
+            </equipoLocal>
+            <equipoVisitante nombre="mbm"> 4 - 12
+                <derrota />
+            </equipoVisitante>
+        </partido>
+    </partidos>
+</ligaBalonmano>
