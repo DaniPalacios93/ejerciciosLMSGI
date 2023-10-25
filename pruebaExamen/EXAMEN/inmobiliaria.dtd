@@ -1,0 +1,29 @@
+<!ELEMENT inmobiliaria (casas, ofertas)>
+
+<!ELEMENT casas (casa)+>
+<!ELEMENT casa (precio, tamanio, habitaciones, piscina?, (barrioRico | barrioPobre))>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT tamanio (#PCDATA)>
+<!ELEMENT habitaciones (#PCDATA)>
+<!ELEMENT piscina EMPTY>
+<!ELEMENT barrioRico EMPTY>
+<!ELEMENT barrioPobre EMPTY>
+
+<!ELEMENT ofertas (oferta)*>
+<!ELEMENT oferta (#PCDATA | refCasa)*>
+<!ELEMENT refCasa EMPTY>
+
+<!ATTLIST inmobiliaria  nombre CDATA #REQUIRED
+                        direccion CDATA #FIXED "elCasuplonWapo.com">  
+
+<!ATTLIST casas nuevas IDREFS #IMPLIED>
+
+<!ATTLIST casa  tipo (piso | casa | chalet | mansion) #REQUIRED
+                codCasa ID #REQUIRED>
+
+<!ATTLIST refCasa casaDeReferencia IDREF #REQUIRED>
+
+<!ENTITY ofertaEspecial "Oferta especial, solo por tiempo limitado, me la quitan de las manos!!">
+<!ENTITY % vecinos "vecinos CDATA #IMPLIED">
+<!ATTLIST barrioRico %vecinos;>
+<!ATTLIST barrioPobre %vecinos;>

@@ -1,0 +1,21 @@
+<!ELEMENT juicios (caso, acusados)>
+
+<!ELEMENT caso (#PCDATA | resolucion)*>
+<!ELEMENT resolucion EMPTY>
+
+<!ELEMENT acusados (nombreAcusado, edad, reincidente?, (hombre | mujer))+>
+<!ELEMENT nombreAcusado (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT reincidente EMPTY>
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+
+<!ATTLIST juicios lugar CDATA #FIXED "juzgado provincial de Tarragona">
+
+<!ATTLIST caso acusado IDREF #REQUIRED>
+<!ATTLIST acusados losMasPeligrosos IDREFS #IMPLIED>
+<!ATTLIST nombreAcusado codigo ID #REQUIRED>
+
+<!ATTLIST resolucion fallo (a_favor | en_contra | suspendido) #REQUIRED>
+
+<!ENTITY inocente "El jurado lo declara ">

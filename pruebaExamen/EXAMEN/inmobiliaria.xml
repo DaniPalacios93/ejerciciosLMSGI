@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inmobiliaria SYSTEM "inmobiliaria.dtd">
+<inmobiliaria nombre="el casuplón wapo" direccion="elCasuplonWapo.com">
+    <casas nuevas="chalet1 casa1">
+        <casa tipo="chalet" codCasa="chalet1">
+            <precio>750.000</precio>
+            <tamanio>200m²</tamanio>
+            <habitaciones>7</habitaciones>
+            <piscina />
+            <barrioRico />
+        </casa>
+        <casa tipo="piso" codCasa="piso1">
+            <precio>85.000</precio>
+            <tamanio>70m²</tamanio>
+            <habitaciones>3</habitaciones>
+            <barrioPobre />
+        </casa>
+        <casa tipo="casa" codCasa="casa1">
+            <precio>120.000</precio>
+            <tamanio>98m²</tamanio>
+            <habitaciones>5</habitaciones>
+            <piscina />
+            <barrioPobre />
+        </casa>
+    </casas>
+    <ofertas>
+        <oferta>Casa sin amueblar, 10% de rebaja ½
+            <refCasa casaDeReferencia="casa1" />
+        </oferta>
+    </ofertas>
+</inmobiliaria>

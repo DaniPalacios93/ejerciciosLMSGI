@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE juicios SYSTEM "prueba.dtd">
+
+<juicios lugar="juzgado provincial de Tarragona">
+    <caso acusado="jpere">La fruteria Gonzales acusa a Juan Perea de hurto.
+        <resolucion fallo="a_favor" />
+    </caso>
+    <acusados losMasPeligrosos="elPipa laLoca">
+        <nombreAcusado codigo="jpere">
+            Juan Perea
+        </nombreAcusado> 
+        <edad>
+            23
+        </edad>
+        <hombre/>
+        <nombreAcusado codigo="elPipa">
+            Alfonso El pipa
+        </nombreAcusado> 
+        <edad>
+            30
+        </edad>
+        <reincidente />
+        <hombre/>
+        <nombreAcusado codigo="laLoca">
+            La loca
+        </nombreAcusado> 
+        <edad>
+            43
+        </edad>
+        <mujer/>
+    </acusados>
+</juicios>
