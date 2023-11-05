@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playa nombre="La Barrosa" aforo="1200" tipo_playa="nudista" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="playa.xsd">
+La mejor playa de la costa oeste
+    <turista>
+        <nombre DNI="50505050Z">Paco</nombre>
+        <edad>21</edad>
+        <bultos>neverita sombrilla sandia</bultos>
+    </turista>
+    <salvaCostas>
+        <nombre DNI="23232323S">Pepe</nombre>
+        <edad>18</edad>
+        <bultos>tortilla</bultos>
+        <prismaticos />
+    </salvaCostas>
+    <mascotas tipoAnimal="perro">7</mascotas>
+</playa>

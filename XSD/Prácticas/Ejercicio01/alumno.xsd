@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumno" type="tipoAlumno"/>
+    <xs:complexType name="tipoAlumno">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="direccion" type="tipoDireccion"/>
+            <xs:element name="telefono" type="tipoTelefono"/>
+        </xs:sequence>
+        <xs:attribute name="dni" type="tipoDNI"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoDireccion">
+        <xs:sequence>
+            <xs:element name="calle" type="xs:string"/>
+            <xs:element name="numero" type="xs:integer"/>
+            <xs:element name="ciudad" type="xs:string"/>
+            <xs:element name="provincia" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoTelefono">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="9"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoDNI">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

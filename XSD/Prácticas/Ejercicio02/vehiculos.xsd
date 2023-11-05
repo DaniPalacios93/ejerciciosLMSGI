@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="vehiculos" type="tipoVehiculos"/>
+
+    <xs:complexType name="tipoVehiculos">
+        <xs:sequence>
+            <xs:element name="vehiculo" type="tipoVehiculo" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="dni" type="tipoDNI"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDNI">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoVehiculo">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="modelo" type="xs:string"/>
+            <xs:element name="fabricacion" type="tipoFabricacion"/>
+            <xs:element name="modificaciones" type="tipoModificaciones"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFabricacion">
+        <xs:sequence>
+            <xs:element name="inicio" type="tipoFecha"/>
+            <xs:element name="fin" type="tipoFecha"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFecha">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:integer"/>
+            <xs:element name="mes" type="tipoMesDelAnyo"/>
+            <xs:element name="anyo" type="tipoAnyo"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoMesDelAnyo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="January"/>
+            <xs:enumeration value="February"/>
+            <xs:enumeration value="March"/>
+            <xs:enumeration value="April"/>
+            <xs:enumeration value="May"/>
+            <xs:enumeration value="June"/>
+            <xs:enumeration value="July"/>
+            <xs:enumeration value="August"/>
+            <xs:enumeration value="September"/>
+            <xs:enumeration value="October"/>
+            <xs:enumeration value="November"/>
+            <xs:enumeration value="Dicember"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAnyo">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1949"/>
+            <xs:maxInclusive value="2100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoModificaciones">
+        <xs:sequence>
+            <xs:element name="modificacion" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>  
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

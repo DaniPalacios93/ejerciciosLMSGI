@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="playa" type="tipoPlaya"/>
+
+    <xs:complexType name="tipoPlaya" mixed="true">
+        <xs:all>
+            <xs:element name="turista" type="tipoTurista"/>
+            <xs:element name="salvaCostas" type="tipoSalvaCostas"/>
+            <xs:element name="mascotas" type="tipoMascotas"/>
+        </xs:all>
+        <xs:attribute name="aforo" type="tipoAforo"/>
+        <xs:attribute name="nombre" type="xs:string"/>
+        <xs:attribute name="tipo_playa" type="tipoTipoPlaya"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoAforo">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="5000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoTipoPlaya">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="nudista"/>
+            <xs:enumeration value="normal"/>
+            <xs:enumeration value="deMascotas"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="tipoTurista">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoNombre"/>
+            <xs:element name="edad" type="tipoEdad"/>
+            <xs:element name="bultos" type="tipoBultos"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoNombre">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="DNI" type="tipoDNI"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDNI">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoEdad">
+        <xs:restriction base="tipoEdadGeneral">
+            <xs:minInclusive value="18"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEdadGeneral">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoBultos">
+        <xs:list itemType="tipoCosasDePlaya"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCosasDePlaya">
+        <xs:union memberTypes="tipoComida tipoCosas"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoComida">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="tortilla"/>
+            <xs:enumeration value="sandia"/>
+            <xs:enumeration value="filete empanao"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCosas">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="sombrilla"/>
+            <xs:enumeration value="neverita"/>
+            <xs:enumeration value="silla"/>
+            <xs:enumeration value="toalla"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="tipoSalvaCostas">
+        <xs:complexContent>
+            <xs:extension base="tipoTurista">
+                <xs:choice>
+                    <xs:element name="flotador" type="tipoVacio"/>
+                    <xs:element name="tabla" type="tipoVacio"/>
+                    <xs:element name="prismaticos" type="tipoVacio"/>
+                </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoVacio"/>
+
+
+        <xs:complexType name="tipoMascotas">
+            <xs:simpleContent>
+                <xs:extension base="tipoMax10">
+                    <xs:attribute name="tipoAnimal" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+
+        <xs:simpleType name="tipoMax10">
+            <xs:restriction base="xs:integer">
+                <xs:maxInclusive value="10"/>
+            </xs:restriction>
+        </xs:simpleType>
+</xs:schema>

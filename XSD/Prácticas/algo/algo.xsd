@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="prueba" type="tipoComplejo"/>
+
+    <xs:complexType name="tipoComplejo">
+        <xs:sequence>
+            <xs:element name="primero" type="xs:string"/>
+            <xs:element name="segundo" type="xs:integer"/>
+            <xs:element name="tercero" type="xs:nonPositiveInteger"/>
+            <xs:element name="cuartoComplejo" type="tipoComplejoCuarto"/>
+        </xs:sequence>
+    </xs:complexType>
+   
+
+    <xs:complexType name="tipoComplejoCuarto">
+        <xs:choice>
+            <xs:element name="blanco" type="xs:string"/>
+            <xs:element name="negro" type="xs:string"/>
+        </xs:choice>
+    </xs:complexType>
+
+
+
+</xs:schema>
