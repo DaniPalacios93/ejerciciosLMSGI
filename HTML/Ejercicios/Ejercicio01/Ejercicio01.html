@@ -8,11 +8,70 @@
 
     <style>
         body{
-            background-color: #808080;
+            background-color: #ebeaea;
             margin: 3%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
+        h1{
+            color: orangered;
+        }
 
+        h2{
+            color:rgb(0, 151, 238);
+        }
+        
+        h3{
+            color: rgb(219, 3, 3);
+        }
+
+        .colorVerde{
+            color: rgb(0, 124, 0);
+        }
+
+        #Electronicos{
+            background-color: rgb(255, 255, 169);
+            border-radius: 5%;
+            padding-left: 10px;
+        }
+
+        table{
+            width: 100%;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th{
+            background-color: rgb(175, 173, 173);
+            text-align: left;
+            border: 1px solid;
+            border-color: grey;
+            padding: 5px;
+        }
+
+        td{
+            padding-left: 5px;
+            border: 1px solid;
+            border-color: gray;
+            padding: 5px;
+        }
+
+        #Ofertas{
+            text-align: center;
+            line-height: 0px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        img{
+            width: 35%;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+        }
 
 
     </style>
@@ -22,7 +81,7 @@
     <h1>¡Ofertas de Black Friday!</h1>
     <p>Bienvenidos a nuestra página de ofertas especiales para el Black Friday. Descubre descuentos increibles en una variedad de productos.</p>
 
-    <h2>Electrónicos</h2>
+    <h2 class="colorVerde">Electrónicos</h2>
     <p>Encuentra las mejores ofertas en electrónicos para eles Black Friday.</p>
 
     <h3>Teléfonos inteligentes</h3>
@@ -39,8 +98,8 @@
         <li><a href="#RopaYAccesorios">Ropa y Accesorios</a></li>
     </ul>
 
-    <h2 name="Electronicos" id="Electrónicos">Electrónicos</h2>
-    <p>Descubre nuestras ofertas en electrónicos</p>
+    <h2 name="Electronicos" id="Electronicos">Electrónicos</h2>
+    <p>Descubre nuestras ofertas en electrónicos y tecnología avanzada</p>
 
     <img src="https://www.redeweb.com/wp-content/uploads/2023/10/aparatos-electronicos.jpg">
 
@@ -54,8 +113,8 @@
     <p>Actualiza tu estilo con nuetras ofertas en ropa y accesorios de moda</p>
     <img src="https://img.freepik.com/vector-gratis/ilustraciones-moda_23-2147492196.jpg?size=338&ext=jpg&ga=GA1.1.386372595.1698364800&semt=ais">
 
-    <p>Ofertas destacadas</p>
-    <table width="100%" border="1">
+    <p id="Ofertas">Ofertas destacadas</p>
+    <table>
         <tr>
             <th>Producto</th>
             <th colspan="2">Descuento</th>
