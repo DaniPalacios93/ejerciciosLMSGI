@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tabla</title>
+        <style>
+            body{
+                padding: 25% 10%;
+            }
+
+            table{
+                border-collapse: collapse;
+                border: 1px solid;
+                border-color: grey;
+            }
+            caption{
+                margin-bottom: 10px;
+                font-family: fantasy;
+                font-size:larger;
+            }
+
+            th{
+                font-family:serif;
+                font-size: large;
+                padding: 5px;
+                border-bottom: 1px solid gray;
+                text-align: center;
+                background-color: rgba(127, 255, 212, 0.473);
+            }
+
+            td{
+                padding: 5px;
+                padding-left: 10px;
+                border-bottom: 1px solid grey;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Superheroes de DC</caption>
+            <tr>
+                <th>Superheroe</th>
+                <th>Poderes</th>
+                <th>Imagen</th>
+                <th>biografía</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Batman</td>
+                <td>Inteligencia, habilidades de detective, habilidades marciales</td>
+                <td rowspan="2"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2">Más sobre Batman</td>
+            </tr>
+            <tr>
+                <td>Alias: El Caballero Oscuro</td>
+            </tr>
+            <tr>
+                <td>Superman</td>
+                <td>Vuelo, super fuerza, visión de rayos X</td>
+                <td><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td>Más sobre Superman</td>
+            </tr>
+            <tr>
+                <td>Wonder Woman</td>
+                <td>Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
+                <td><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td>Mas sobre Wonder Woman</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Flash</td>
+                <td>Velocidad sobrehumana, curvatura del tiempo</td>
+                <td rowspan="2"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2">Más sobre Flash</td>
+            </tr>
+            <tr>
+                <td>Miembro de la Liga de la Justicia</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
