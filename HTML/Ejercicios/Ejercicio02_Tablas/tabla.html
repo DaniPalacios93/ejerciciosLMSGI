@@ -4,22 +4,25 @@
         <title>tabla</title>
         <style>
             body{
-                padding: 25% 10%;
                 background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2621/H9v5o8vP6RKkQtR77LIGrGDE.png);
                 background-size: auto;
-                color: aliceblue;
+                color: rgba(240, 248, 255, 0.705);
+                
             }
 
             table{
+                margin: 10%;
                 border-collapse: collapse;
                 border: 1px solid;
-                border-color: grey;
+                border-color: rgb(170, 170, 170);
+                box-shadow: 5px 5px 10px rgba(222, 184, 135, 0.884);
                 
             }
             caption{
-                margin-bottom: 10px;
+                margin-bottom: 15px;
                 font-family: fantasy;
-                font-size:larger;
+                font-size: 50px;
+                color: rgba(222, 184, 135, 0.911); ;
             }
 
             th{
@@ -28,14 +31,13 @@
                 padding: 5px;
                 border-bottom: 1px solid gray;
                 text-align: center;
-                background-color: rgba(127, 255, 212, 0.314);
-                color: beige;
+                background-color: rgba(21, 53, 33, 0.603);
+                color: rgba(222, 184, 135, 0.884);
             }
 
             td{
-                padding: 5px;
-                padding-left: 10px;
-                border-bottom: 1px solid grey;
+                padding: 10px; 
+                border-bottom: 1px solid rgb(138, 137, 137);
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
             }
 
@@ -44,20 +46,30 @@
             }
 
             .columnasInfo:hover{
-                background-color: rgba(137, 43, 226, 0.444);
-            }
-
-            .columnaPrincipal{
-
-                background-color: blue;
+                background-color: rgba(222, 184, 135, 0.438);;
             }
 
            .contImg{
                 text-align: center;
            }
 
+           img{
+            width: 50px;
+           }
+
             img:hover{
                 transform: scale(2.1);
+            }
+
+            a{
+                color: beige;
+                text-decoration: none;
+                
+            }
+
+            a:hover{
+                color: burlywood; 
+                font-size: large;
             }
 
 
@@ -68,18 +80,19 @@
             <caption>Superheroes de DC</caption>
             <colgroup>
                 <col style="background-color: 7rgba(95, 158, 160, 0.994);">
-                <col span="3" style="background-color: rgba(95, 158, 160, 0.39);" >
+                <col style="background-color: rgba(95, 158, 160, 0.39);" >
+                <col span="2" style="background-color: rgba(116, 191, 194, 0.39);" >
             </colgroup>
             <tr>
                 <th>Superheroe</th>
                 <th>Poderes</th>
                 <th>Imagen</th>
-                <th>biografía</th>
+                <th>Biografía</th>
             </tr>
             <tr>
                 <td rowspan="2" class="columnasInfo">Batman</td>
                 <td class="columnasInfo">Inteligencia, habilidades de detective, habilidades marciales</td>
-                <td rowspan="2" class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2" class="contImg"><img src="https://media3.giphy.com/media/FbZYCW78PANyM/giphy.gif"/></td>
                 <td rowspan="2"><a id="Batman" href="https://es.wikipedia.org/wiki/Batman">Más sobre Batman</a></td>
             </tr>
             <tr>
@@ -88,19 +101,19 @@
             <tr>
                 <td class="columnasInfo">Superman</td>
                 <td class="columnasInfo">Vuelo, super fuerza, visión de rayos X</td>
-                <td class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td class="contImg"><img src="https://i.gifer.com/K63F.gif"/></td>
                 <td><a href="https://es.wikipedia.org/wiki/Superman">Más sobre Superman</a></td>
             </tr>
             <tr>
                 <td class="columnasInfo">Wonder Woman</td>
                 <td class="columnasInfo">Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
-                <td class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td class="contImg"><img src="https://media.tenor.com/vVwJ17m5qxEAAAAC/wonder-woman.gif"/></td>
                 <td><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla">Más sobre Wonder Woman</a></td>
             </tr>
             <tr>
                 <td rowspan="2" class="columnasInfo">Flash</td>
                 <td class="columnasInfo">Velocidad sobrehumana, curvatura del tiempo</td>
-                <td rowspan="2" class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2" class="contImg"><img src="https://media.tenor.com/siwqFNpi-z4AAAAC/the-flash-flash.gif"/></td>
                 <td rowspan="2"><a href="https://es.wikipedia.org/wiki/Flash_(historieta)">Más sobre Flash</a></td>
             </tr>
             <tr>
