@@ -5,6 +5,9 @@
         <style>
             body{
                 padding: 25% 10%;
+                background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2621/H9v5o8vP6RKkQtR77LIGrGDE.png);
+                background-size: auto;
+                color: aliceblue;
             }
 
             table{
@@ -25,17 +28,37 @@
                 padding: 5px;
                 border-bottom: 1px solid gray;
                 text-align: center;
-                background-color: rgba(127, 255, 212, 0.473);
+                background-color: rgba(127, 255, 212, 0.314);
+                color: beige;
             }
 
             td{
                 padding: 5px;
                 padding-left: 10px;
                 border-bottom: 1px solid grey;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-                
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
             }
 
+            td{
+                background-color: rgba(95, 158, 160, 0.39);
+            }
+
+            .columnasInfo:hover{
+                background-color: rgba(137, 43, 226, 0.444);
+            }
+
+            .columnaPrincipal{
+
+                background-color: blue;
+            }
+
+           .contImg{
+                text-align: center;
+           }
+
+            img:hover{
+                transform: scale(2.1);
+            }
 
 
         </style>
@@ -43,6 +66,10 @@
     <body>
         <table>
             <caption>Superheroes de DC</caption>
+            <colgroup>
+                <col style="background-color: 7rgba(95, 158, 160, 0.994);">
+                <col span="3" style="background-color: rgba(95, 158, 160, 0.39);" >
+            </colgroup>
             <tr>
                 <th>Superheroe</th>
                 <th>Poderes</th>
@@ -50,34 +77,34 @@
                 <th>biografía</th>
             </tr>
             <tr>
-                <td rowspan="2">Batman</td>
-                <td>Inteligencia, habilidades de detective, habilidades marciales</td>
-                <td rowspan="2"><img src="https://dummyimage.com/25x25/111/fff"/></td>
-                <td rowspan="2">Más sobre Batman</td>
+                <td rowspan="2" class="columnasInfo">Batman</td>
+                <td class="columnasInfo">Inteligencia, habilidades de detective, habilidades marciales</td>
+                <td rowspan="2" class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2"><a id="Batman" href="https://es.wikipedia.org/wiki/Batman">Más sobre Batman</a></td>
             </tr>
             <tr>
-                <td>Alias: El Caballero Oscuro</td>
+                <td class="columnasInfo">Alias: El Caballero Oscuro</td>
             </tr>
             <tr>
-                <td>Superman</td>
-                <td>Vuelo, super fuerza, visión de rayos X</td>
-                <td><img src="https://dummyimage.com/25x25/111/fff"/></td>
-                <td>Más sobre Superman</td>
+                <td class="columnasInfo">Superman</td>
+                <td class="columnasInfo">Vuelo, super fuerza, visión de rayos X</td>
+                <td class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td><a href="https://es.wikipedia.org/wiki/Superman">Más sobre Superman</a></td>
             </tr>
             <tr>
-                <td>Wonder Woman</td>
-                <td>Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
-                <td><img src="https://dummyimage.com/25x25/111/fff"/></td>
-                <td>Mas sobre Wonder Woman</td>
+                <td class="columnasInfo">Wonder Woman</td>
+                <td class="columnasInfo">Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
+                <td class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla">Más sobre Wonder Woman</a></td>
             </tr>
             <tr>
-                <td rowspan="2">Flash</td>
-                <td>Velocidad sobrehumana, curvatura del tiempo</td>
-                <td rowspan="2"><img src="https://dummyimage.com/25x25/111/fff"/></td>
-                <td rowspan="2">Más sobre Flash</td>
+                <td rowspan="2" class="columnasInfo">Flash</td>
+                <td class="columnasInfo">Velocidad sobrehumana, curvatura del tiempo</td>
+                <td rowspan="2" class="contImg"><img src="https://dummyimage.com/25x25/111/fff"/></td>
+                <td rowspan="2"><a href="https://es.wikipedia.org/wiki/Flash_(historieta)">Más sobre Flash</a></td>
             </tr>
             <tr>
-                <td>Miembro de la Liga de la Justicia</td>
+                <td class="columnasInfo">Miembro de la Liga de la Justicia</td>
             </tr>
         </table>
     </body>
