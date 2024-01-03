@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>align-self</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                display: flex;
+                align-items: flex-start;
+                height: 100vh;
+                border: 5px solid red;
+            }
+
+            .container div {
+                color: white; 
+                font-size: 50px;
+                text-align: center;
+                padding: 5px;
+                width: 450px;
+                flex-grow: 1;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="background-color:rgb(26, 188, 156)">1</div>
+            <div style="background-color:rgb(84, 149, 217); align-self: stretch;">2</div>
+            <div style="background-color:rgb(147, 91, 180)">3</div>
+            <div style="background-color:rgb(57, 72, 93)">4</div>
+            <div style="background-color:rgb(233, 199, 45)">5</div>
+            <div style="background-color:rgb(215, 132, 45); align-self: center;">6</div>
+            <div style="background-color:rgb(213, 88, 63)">7</div>
+            <div style="background-color:rgb(190, 195, 199)">8</div>
+            <div style="background-color:rgb(100, 201, 117); align-self: flex-end;">9</div>
+            <div style="background-color:rgb(74, 158, 134)">10</div>
+        </div>
+    </body>
+</html>

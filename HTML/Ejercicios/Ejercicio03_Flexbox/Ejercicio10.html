@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex property</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100vh;
+                border: 5px solid red;
+            }
+
+            .container div {
+                color: white; 
+                font-size: large;
+                text-align: center;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="background-color:rgb(26, 188, 156); flex-basis: 30%;">Uno &#129409;</div>
+            <div style="background-color:rgb(84, 149, 217);flex-basis: 30%;">Dos &#128540;</div>
+            <div style="background-color:rgb(147, 91, 180);flex-basis: 35%;">Tres &#128564;</div>
+            <div style="background-color:rgb(57, 72, 93);flex-basis: 5%;">Cuatro &#127958;</div>
+            <div style="background-color:rgb(233, 199, 45); flex-basis: 50%;">Cinco &#127829;</div>
+            <div style="background-color:rgb(215, 132, 45); flex-basis: 50%;">Seis &#127808;</div>
+
+        </div>
+    </body>
+</html>

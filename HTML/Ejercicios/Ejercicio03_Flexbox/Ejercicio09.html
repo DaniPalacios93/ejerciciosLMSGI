@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>flex-grow</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .container div {
+                color: white; 
+                font-size: large;
+                text-align: center;
+                padding: 5px;
+                flex-grow: 1;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="background-color:rgb(26, 188, 156)">Uno &#129409;</div>
+            <div style="background-color:rgb(84, 149, 217); flex-grow: 3;">Dos &#128540;</div>
+            <div style="background-color:rgb(147, 91, 180)">Tres &#128564;</div>
+            <div style="background-color:rgb(57, 72, 93)">Cuatro &#127958;</div>
+            <div style="background-color:rgb(233, 199, 45); flex-grow: 5;">Cinco &#127829;</div>
+            <div style="background-color:rgb(215, 132, 45)">Seis &#127808;</div>
+        </div>
+    </body>
+</html>
