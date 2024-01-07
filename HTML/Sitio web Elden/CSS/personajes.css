@@ -114,7 +114,7 @@ footer {
 
 #cabeceraDeTabla {
     text-align: center;
-    color: white;
+    color: wheat;
 
 }
 
@@ -123,10 +123,10 @@ table {
 }
 
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid rgba(218, 165, 32, 0.589);
     border-collapse: collapse;
     padding: 5px;
-    background-color: rgba(15, 15, 15, 0.74);
+    background-color: rgba(10, 44, 49, 0.712) ;
 }
 
 td > img {
@@ -140,5 +140,5 @@ ul > li {
 #tableContainer{
     display: flex;
     justify-content: center;
-    color: azure;
+    color: wheat;
 }
