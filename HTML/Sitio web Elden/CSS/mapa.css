@@ -90,13 +90,13 @@ a:link {
   a:hover {
     color: red;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:active {
     color: yellow;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 
@@ -108,12 +108,11 @@ main{
 
 #textContainer {
     text-align: center;
-    color: white;
+    color: wheat;
 }
 
 
 #mapContainer {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,4 +123,5 @@ main{
 #mapContainer > img {
     height: auto;
     border-radius: 50px;
+    border: 2px solid rgba(218, 165, 32, 0.589);
 }

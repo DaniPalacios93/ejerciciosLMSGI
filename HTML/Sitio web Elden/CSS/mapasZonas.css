@@ -91,18 +91,17 @@ a:link {
   a:hover {
     color: red;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:active {
     color: yellow;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   main {
     margin: 25px;
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
