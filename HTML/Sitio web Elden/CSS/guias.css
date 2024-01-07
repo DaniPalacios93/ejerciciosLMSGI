@@ -1,0 +1,117 @@
+
+.centrado {
+    text-align: center;
+}
+
+
+.negrita {
+    font-weight: bold;
+}
+
+
+body{
+    background-color: rgba(8, 7, 7, 0.877);
+}
+
+/* 
+HEADER 
+*/
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* 
+BARRA DEL NAVEGADOR 
+*/
+
+nav{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    border-radius: 15px;
+}
+
+/* logo */
+
+#elden {
+    color: goldenrod;
+    font-size: 35px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo > img {
+    height: 100%;
+}
+
+/* enlaces */
+
+#navegador{
+    display: flex;
+    align-items: center;
+}
+
+#navegador > div{
+    display: flex;
+    align-items: center;
+    color: goldenrod; 
+    font-size: 20px;
+    height: 100%;
+}
+
+#navegador > div:hover{
+    background-color: black;
+    
+}
+
+#navegador > div > a {
+    margin: 10px;
+    text-decoration: none;  
+}
+
+a:link {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  main {
+    color: white;
+  }
+
+  main > p {
+    width: 75%;
+  }
+
+  ol {
+    border: 5px lightseagreen dotted;
+  }
+
+  li{
+    margin: 10px;
+  }

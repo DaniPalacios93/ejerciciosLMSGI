@@ -1,0 +1,180 @@
+.negrita {
+    font-weight: bold;
+}
+
+.grande {
+    font-size: 22px;
+}
+
+.subrallado {
+
+    text-decoration: underline;
+
+}
+
+
+
+body{
+    background-color: rgba(8, 7, 7, 0.877);
+}
+
+/* 
+HEADER 
+*/
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* 
+BARRA DEL NAVEGADOR 
+*/
+
+nav{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    border-radius: 15px;
+}
+
+/* logo */
+
+#elden {
+    color: goldenrod;
+    font-size: 35px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo > img {
+    height: 100%;
+}
+
+/* enlaces */
+
+#navegador{
+    display: flex;
+    align-items: center;
+}
+
+#navegador > div{
+    display: flex;
+    align-items: center;
+    color: goldenrod; 
+    font-size: 20px;
+    height: 100%;
+}
+
+#navegador > div:hover{
+    background-color: black;
+    
+}
+
+#navegador > div > a {
+    margin: 10px;
+    text-decoration: none;  
+}
+
+a:link {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+ 
+}
+
+/* 
+ZONA PRINCIPAL 
+*/
+
+main{
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    display: flex;
+    margin: 20px;
+    height: 300vh;
+}
+
+/* indice */
+
+
+#columnaIndice {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#indiceTitleContainer {
+    color: goldenrod;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.itemsContainer {
+    background-color: aqua;
+    border: 3px solid rgba(218, 165, 32, 0.589);
+    width: 90%;
+}
+
+.indiceContainer {
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.indiceContainer:hover{
+    background-color: rgba(10, 44, 49, 0.712) ;
+    border: 1px solid rgba(218, 165, 32, 0.589);
+}
+
+#columnaPrincipal {
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContainer{
+    background-color: rgba(10, 44, 49, 0.712) ;
+    width: 75%;
+    height: 500vh;
+    margin: 10px;
+    border: 3px solid rgba(218, 165, 32, 0.589);
+    border-radius: 25px;
+    text-align: center;
+    color: wheat;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="CSS/contacto.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/Header.jpg">
+        </header>
+        <nav>
+            <div id="logo">
+                <img src="img/Favicon.png">
+                <p id="elden"><a href="index.html">ELDEN RING</a></p>
+            </div>
+            <div id="navegador">
+                <div><a href="Portada.html">Portada</a></div>
+                <div><a href="mapa.html">Mapa</a></div>
+                <div><a href="Personajes.html">Personajes</a></div>
+                <div><a href="#">Armas y objetos</a></div>
+                <div><a href="#">Guias</a></div>
+                <div><a href="#">Contacto</a></div>
+            </div>
+        </nav>
+        <main>
+            <div id="headerContainer">
+                <h1>Formulario de impresiones</h1>
+                <p>Bienvenido jugador a este humilde formulario, quieres compartir tu opinion con nosotros y contar en nuestro Hall de la fama de Elden Ring?</p>
+            </div>
+            <div id="formContainer">
+                <form>
+                    <label><span class="negrita"><p>Nombre del personaje:</p></span>
+                        <input type="text"> </label><br>
+
+                    <p><span class="negrita">Horas de juego</span></p>
+                    <input type="radio" name="horas" id="Hasta25">
+                    <label for="Hasta25">00 - 25 horas</label><br>  
+                    <input type="radio" name="horas" id="Hasta50">
+                    <label for="Hasta50">25 - 50 horas</label><br>   
+                    <input type="radio" name="horas" id="Hasta75">
+                    <label for="Hasta25">50 - 75 horas</label><br>   
+                    <input type="radio" name="horas" id="Hasta25">
+                    <label for="Hasta25">75 - 100 horas</label><br>   
+                    <input type="radio" name="horas" id="Hasta25">
+                    <label for="Hasta25"> +100 horas</label> 
+
+                    <p><span class="negrita">Fecha en la que te pasaste el juego</span></p>
+                    <input type="date" id="fecha">
+
+                    <p><span class="negrita">Nivel máximo alcanzado</span></p>
+                    <input type="number" id="nivel" min="10" max="700" step="5">
+
+                    <p><span class="negrita">Atributos mas destacables:</span></p>
+                    <input type="checkbox" name="atributos" id="Vigor">
+                    <label for="Vigor">Vigor</label><br>
+                    <input type="checkbox" name="atributos" id="Mente">
+                    <label for="Mente">Mente</label><br>
+                    <input type="checkbox" name="atributos" id="Resistencia">
+                    <label for="Resistencia">Resistencia</label><br>
+                    <input type="checkbox" name="atributos" id="Fuerza">
+                    <label for="Fuerza">Fuerza</label><br>
+                    <input type="checkbox" name="atributos" id="Destreza">
+                    <label for="Destreza">Destreza</label><br>
+                    <input type="checkbox" name="atributos" id="Intelecto">
+                    <label for="Intelecto">Intelecto</label><br>
+                    <input type="checkbox" name="atributos" id="Fe">
+                    <label for="Fe">Fe</label><br>
+                    <input type="checkbox" name="atributos" id="Arcano">
+                    <label for="Arcano">Arcano</label><br>
+
+                    <p><span class="negrita">Has usado alguna guia?(si la respuesta es si, por favor incluya la dirección web de la guia)</span></p>
+                    <input type="radio" name="guia" id="no">
+                    <label for="no">NO</label><br>
+                    <input type="radio" name="guia" id="si">
+                    <label for="si">SI</label><br>
+                    <label>Dirección <input type="text" name="guia" placeholder="url"></label>
+
+                    <p><span class="negrita"></span>Valora el nivel de dificultad del juego:</span></p>
+                    <label for="dificultad">Dificultad:</label>
+                    <input type="range" id="vol" name="vol" min="0" max="10">
+                    <hr>
+                    <p><span class="negrita">Quieres recibir el ranquing de jugadores en tu correo por favor registrate a continuación:</span></p>
+                    <label>Nombre: <input type="text"></label>
+                    <label>Email: <input type="email"></label>
+
+                    <input type="submit" value="CONFIRMAR" id="submitInput">
+                </form>
+            </div>
+        </main>
+
+    </body>
+</html>
