@@ -100,18 +100,33 @@ a:active {
   text-decoration: none;
 }
 
-  main {
-    color: white;
-  }
 
-  main > p {
-    width: 75%;
-  }
+/* FOOTER */
 
-  ol {
-    border: 5px lightseagreen dotted;
-  }
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 75px;
+  margin-top: 20px;
+}
 
-  li{
-    margin: 10px;
-  }
+/* MAIN */
+
+main {
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > p {
+  width: 75%;
+}
+
+ol {
+  border: 5px lightseagreen dotted;
+}
+
+li{
+  margin: 10px;
+}

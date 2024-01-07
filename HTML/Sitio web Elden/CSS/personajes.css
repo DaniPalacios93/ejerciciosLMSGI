@@ -100,6 +100,18 @@ a:link {
   }
 
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    margin-top: 25px;
+}
+
+
+
+
 #cabeceraDeTabla {
     text-align: center;
     color: white;

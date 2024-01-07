@@ -80,41 +80,53 @@ a:link {
     color: goldenrod;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:visited {
+a:visited {
     color: goldenrod;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:hover {
+a:hover {
     color: red;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:active {
+a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 
-  main {
+
+  
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    margin-top: 20px;
+}
+
+/* MAIN */
+
+main {
     margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-  }
+}
 
-  .textContainer{
+.textContainer{
     background-color: rgb(10, 44, 49) ;
     width: 75%;
     margin: 10px;
     border: 3px solid lightseagreen;
     border-radius: 25px;
     text-align: center;
-  }
+}
   

@@ -23,3 +23,29 @@ p {
 .textContainer {
     text-align: center;
 }
+
+/* ENLACES */
+
+a:link {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }

@@ -111,7 +111,7 @@ footer {
     display: flex;
     justify-content: space-around;
     height: 75px;
- 
+    margin-top: 20px;
 }
 
 /* 
@@ -160,8 +160,9 @@ main{
     border: 1px solid rgba(218, 165, 32, 0.589);
 }
 
-#columnaPrincipal {
-    
+/*Columna principal */
+
+#columnaPrincipal { 
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -173,8 +174,9 @@ main{
     width: 75%;
     height: 500vh;
     margin: 10px;
+    padding: 15px;
     border: 3px solid rgba(218, 165, 32, 0.589);
     border-radius: 25px;
-    text-align: center;
+    text-align: justify;
     color: wheat;
 }
