@@ -11,6 +11,14 @@
                 margin: 0;
                 padding: 0;
             }
+
+            .negrita {
+                font-weight: bold;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -20,7 +28,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -51,17 +59,17 @@
                         facere eaque neque molestiae, ad dignissimos voluptate. Obcaecati porro ipsum libero vero quasi placeat.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam nulla suscipit quae modi recusandae illum 
                         quos fugit illo odio error neque sit at, tenetur animi, quibusdam distinctio aut eius!</p>
-                    <button type="button" class="btn btn-primary btn-lg">Call to Action >></button>
+                    <button type="button" class="btn btn-primary btn-lg mb-5">Call to Action >></button>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <h1>Contact us</h1>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur, dolore dignissimos maxime nemo obcaecati 
-                        est nihil amet alias numquam temporibus voluptas eveniet nostrum ad animi similique odit, tempora commodi.</p>
+                    <p><span class="negrita">LMSGI</span><br>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <p><span class="underline">P:</span> (123) 456-7890<br><span class="underline">E:</span> name@example.com</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <div class="card">
                         <img src="https://dummyimage.com/300x200/999999/0011ff" class="card-img-top">
                         <div class="card-body">
@@ -73,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <div class="card">
                         <img src="https://dummyimage.com/300x200/999999/0011ff" class="card-img-top">
                         <div class="card-body">
@@ -85,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <div class="card">
                         <img src="https://dummyimage.com/300x200/999999/0011ff" class="card-img-top">
                         <div class="card-body">
