@@ -19,32 +19,44 @@
     <main class="pt-5 mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 m-auto">
+                <div class="col-5 m-auto">
                     <div class="card">
                         <div class="card-header text-center p-5">
-                            <h1>Register</h1>
+                            <h1>Create Account</h1>
                         </div>
                         <div class="card-body p-3">
                             <form>
-                                <div class="mb-3 mt-3">
-                                    <label class="p-2" for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email adress" name="email">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="p-2" for="pwd">Password:</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                                </div>
-                                <div class="form-check mb-3">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="remember"> Remember password
-                                    </label>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="PaswordRecovery.html">Forgot password?</a>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="p-2" for="firstName">First Name</label>
+                                            <input class="form-control mb-3" type="text"  id="firstName" placeholder="Enter first name" name="firstName" required> 
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="p-2" for="lastName">Last Name</label>
+                                            <input class="form-control mb-3" type="text" id="lastName" placeholder="Enter last name" name="lastName" required>  
+                                        </div>
                                     </div>
-                                    <div class="col text-end">
-                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <label class="p-2" for="email">Email:</label>
+                                            <input type="email" class="form-control mb-3" id="email" placeholder="Enter email adress" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="p-2" for="password">Password</label>
+                                            <input class="form-control mb-3" type="text" id="password" placeholder="Enter password" name="password" required> 
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="p-2" for="confirmPassword">Confirm password</label>
+                                            <input class="form-control mb-3" type="text" id="confirmPassword" placeholder="Confirm password" name="confirmPassword" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="d-grid mt-3">
+                                            <button type="submit" class="btn btn-primary">Create Account</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
