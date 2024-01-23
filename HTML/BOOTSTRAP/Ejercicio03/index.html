@@ -20,6 +20,10 @@
                 background-color: rgb(250, 86, 26);
 
             }
+
+            .color-blue{
+                color: aqua;
+            }
         </style>
     </head>
     <body>
@@ -27,19 +31,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-8 m-auto p-2">
-                        <img class="img-fluid" src="img/BANNER-tenecesitamos.gif">
+                        <a href="formulario.html"><img class="img-fluid" src="img/BANNER-tenecesitamos.gif"></a>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col-3 text-start d-flex align-content center">
-                        <p>zona de iconos-enlace</p>
+                <div class="row my-3 d-flex justify-content-between align-items-center">
+                    <div class="col-3 text-start">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!-- Los iconos se hacen muy pequeños-->
+                                    <img class="img" src="img/icon/facebook-f.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img" src="img/icon/instagram.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img" src="img/icon/telegram.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img" src="img/icon/tiktok.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img" src="img/icon/x-twitter.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img" src="img/icon/youtube.svg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-5 text-center">
                         <img class="img-fluid"  src="img/logo-elmundotoday2.png">
                     </div>
+                    <!-- El texto de los botones se apila en lugar de encogerse-->
                     <div class="col-3 d-flex justify-content-end align-items-center">
-                        <a href="#" class="p-3">Iniciar sesión</a>
-                        <a href="#" class="btn btn-primary">Hazte subscriptor</a>
+                        <a href="#" class="p-3 d-none d-md-block">Iniciar sesión</a>
+                        <a href="formulario.html" class="btn btn-primary">Hazte subscriptor</a>
                     </div>
                 </div>
             </div>
@@ -51,27 +78,45 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm sticky-top justify-content-center">
-            <div class="container">
-                <a class="navbar-brand" href="#">Sticky top</a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link 1</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link 3</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">INTERNACIONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ESPAÑA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CULTURA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SOCIEDAD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CIENCIA Y TECNOLOGÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GENTE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DEPORTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OKTODAY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VIDEOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIENDA</a>
+              </li>
+            </ul>
         </nav>
         <hr>
         <main>
-            <div class="container">
-                <div class="row mx-5 bg-primary">
-                    <div class="col-8">
+            <div class="container-fluid">
+                <div class="row mx-5">
+                    <div class="col-md-8">
                         <div class="container">
                             <div class="row">
                                 <a class="fs-1" href="#">
@@ -80,81 +125,110 @@
                                 </a>
                                 <hr>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a class="" href="#" >
+                            <div class="row mt-4">
+                                <div class="col-md">
+                                    <a class="orange-hover" href="#">
                                         <img class="img-fluid" src="img/trump.png">
                                         pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi
                                     </a>
                                 </div>
-                                <div class="col">
-                                    <img class="img-fluid" src="img/trump.png">
-                                <a class="orange-hover">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
+                                <hr class="my-3 d-md-none">
+                                <div class="col-md">
+                                     <a href="#"><img class="img-fluid" src="img/trump.png"></a>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
                                 </div>
+                                <hr class="mt-3 d-md-none">
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <a href="#"><img class="img-fluid" src="img/trump.png"></a>
+                                </div>
+                                <div class="col-md-9">
+                                    <span class="text-white bg-orange px-1 small">Actualidad</span><br>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
+                                </div>
+                                <hr class="mt-3">
                             </div>
                             <div class="row">
-                                <div class="col-3">
-                                    <img class="img-fluid" src="img/trump.png">
+                                <div class="col-md-3">
+                                    <a href="#"><img class="img-fluid" src="img/trump.png"></a>
                                 </div>
-                                <div class="col-9">
-                                    <p>TIRULILLO</p>
-                                    <a class="orange-hover">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
+                                <div class="col-md-9">
+                                    <span class="text-white bg-orange px-1 small">Actualidad</span><br>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
                                 </div>
-                                <hr>
+                                <hr class="mt-3">
                             </div>
                             <div class="row">
-                                <div class="col-3">
-                                    <img class="img-fluid" src="img/trump.png">
+                                <div class="col-md-3">
+                                    <a href="#"><img class="img-fluid" src="img/trump.png"></a>
                                 </div>
-                                <div class="col-9">
-                                    <p>TIRULILLO</p>
-                                    <p>pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</p>
+                                <div class="col-md-9">
+                                    <span class="text-white bg-orange px-1 small">Actualidad</span><br>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
                                 </div>
-                                <hr>
+                                <hr class="mt-3">
                             </div>
                             <div class="row">
-                                <div class="col-3">
-                                    <img class="img-fluid" src="img/trump.png">
+                                <div class="col-md-3">
+                                    <a href="#"><img class="img-fluid" src="img/trump.png"></a>
                                 </div>
-                                <div class="col-9">
-                                    <p>TIRULILLO</p>
-                                    <p>pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</p>
+                                <div class="col-md-9">
+                                    <span class="text-white bg-orange px-1 small">Actualidad</span><br>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
                                 </div>
-                                <hr>
+                                <hr class="mt-3">
                             </div>
                             <div class="row">
-                                <div class="col-3">
-                                    <img class="img-fluid" src="img/trump.png">
+                                <div class="col-md-3">
+                                    <a href="#"><img class="img-fluid" src="img/trump.png"></a>
                                 </div>
-                                <div class="col-9">
-                                    <p>TIRULILLO</p>
-                                    <p>pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</p>
+                                <div class="col-md-9">
+                                    <span class="text-white bg-orange px-1 small">Actualidad</span><br>
+                                    <a class="orange-hover" href="#">pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</a>
                                 </div>
-                                <hr>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img class="img-fluid" src="img/trump.png">
-                                </div>
-                                <div class="col-9">
-                                    <p>TIRULILLO</p>
-                                    <p>pie de foto: kasjdbkabdkad ajdbha aiodbajks daosdbasd aosduihaiosd asudhadi</p>
-                                </div>
-                                <hr>
+                                <hr class="mt-3">
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="container border p-3">
                             <div class="row">
                                 <div class="col-3 m-auto">
                                     <img class="img-fluid" src="img/logo-banner-lateral-1.png">
                                 </div>
                             </div>
-                        </div>
-                        <div class="container">
                             <div class="row">
-                                <img src="img/banner-tenecesitamos-cuadrado.gif">
+                                <div class="col text-center">
+                                    <span class="fs-4">El boletín de EMT</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col text-center ">
+                                    Boletín gratuito con las noticias<br>
+                                    más relevantes de la semana.<br>
+                                    El Mundo Today · Over 25,000 subscribers
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Introduce tu email">
+                                        <button class="btn btn-warning" type="submit">Suscribirse</button> 
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <p>By subscribing you agree to <a class="text-decoration-underline" href="#">Substack's Terms of Use</a>, 
+                                    our <a class="text-decoration-underline" href="#">Privacy Policy</a> and our 
+                                    <a class="text-decoration-underline" href="#">Information collection notice</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container my-3">
+                            <div class="row">
+                                <a href="formulario.html"><img class="img-fluid" src="img/banner-tenecesitamos-cuadrado.gif"></a>
                             </div>
                         </div>
                     </div>
@@ -163,32 +237,58 @@
         </main>
         <footer>
             <div class="container-fluid text-center bg-secondary">
-                <div class="row">
-                    <div class="col">
-                        ICONO Inicia sesion
+                <div class="row my-4 d-flex justify-content-center align-items-center">
+                    <div class="col-3">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-2">
+                                    <img class="img-fluid" src="img/icon/facebook-f.svg">
+                                </div>
+                                <div class="col-7">
+                                    INICIA SESION
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col m-auto">
-                        <p>ICONOS ICONOS ICONOS</p>
+                    <div class="col-4 m-auto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#"><img class="img-fluid color-blue" src="img/icon/facebook-f.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="img/icon/instagram.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="img/icon/telegram.svg">
+                                </div>
+                                <div class="col">
+                                    <!--PREGUNTA: Como se usan los iconos? con este link o como si fuesen imagenes? como se trabaja con ellos? se le cambia de color etc...-->
+                                    <svg class="color-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                                    </svg>
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="img/icon/x-twitter.svg">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="img/icon/youtube.svg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-2 m-auto">
-                        <img class="img-fluid" src="img/emt-logo-blanco-homogeneo.png">
-                        <button type="submit" class="btn btn-primary">Suscribete</button>
+                        <img class="img-fluid" src="img/emt-logo-blanco-homogeneo.png"><br><br>
+                        <button type="submit" class="btn btn-primary" href="formulario.html">Suscribete</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-3">
                     <div class="col m-auto">
-                        <a href="#">ENLACE 1</a> · <a href="#">ENLACE 2</a> · <a href="#">ENLACE 3</a> · <a href="#">ENLACE 4</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col m-auto">
-                        <p>con el apoyo tecnologico de</p>
-                        <img src="img/icm-logo-1.png">
-                        <p>Y otras cosas que no me acuerdo</p>
+                        <a class="small" href="#">POLITICAS DE COOKIES</a> · <a class="small" href="#">AVISO LEGAL Y POLITICA DE PRIVACIDAD</a> · <a class="small" href="#">CONTACTO Y PUBLICIDAD</a> · <a class="small" href="#">TIENDA</a>
                     </div>
                 </div>
             </div>
