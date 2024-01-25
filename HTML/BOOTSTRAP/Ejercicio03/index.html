@@ -21,6 +21,14 @@
                 color: black !important;
             }
 
+            .grey-hover:hover{
+                color: grey !important;
+            }
+
+            .black-bg-hover:hover {
+                background-color: rgba(0, 0, 0, 0.709);
+            }
+
             .bg-orange{
                 background-color: rgb(250, 86, 26);
 
@@ -73,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center ">
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center sticky-top">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">INTERNACIONAL</a>
@@ -109,8 +117,8 @@
         </nav>
         <hr>
         <main>
-            <div class="container-fluid">
-                <div class="row mx-5">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-8">
                         <div class="container">
                             <div class="row">
@@ -232,58 +240,38 @@
         </main>
         <footer>
             <div class="container-fluid text-center bg-secondary">
-                <div class="row my-4 d-flex justify-content-center align-items-center">
-                    <div class="col-3">
-                        <div class="container">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-2">
-                                    <i class="fa-solid fa-user fa-xl"></i>
-                                </div>
-                                <div class="col-7">
-                                    INICIA SESION
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <a class="mt-4 text-info" href="#"><i class="fa-solid fa-user fa-xl"></i><span class="small mx-2">INICIA SESION</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-4 m-auto">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#"><i class="fa-brands fa-facebook-f fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><i class="fa-brands fa-instagram fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><i class="fa-solid fa-envelope fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><i class="fa-brands fa-telegram fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><i class="fa-brands fa-tiktok fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col black-hover">
-                                    <a href="#"><i class="fa-brands fa-x-twitter fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><i class="fa-brands fa-youtube fa-2xl black-hover" style="color: #ff7800;"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row my-5">
+                    <div class="col-4 m-auto d-flex justify-content-between align-items-center">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-2xl black-hover" style="color: #ff7800;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2xl black-hover" style="color: #ff7800;"></i></a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ">
                     <div class="col-2 m-auto">
                         <img class="img-fluid" src="img/emt-logo-blanco-homogeneo.png"><br><br>
-                        <button type="submit" class="btn btn-primary" href="formulario.html">Suscribete</button>
+                        <button type="submit" class="btn bg-orange black-bg-hover text-white py-3 px-5" href="formulario.html">SUSCRÍBETE</button>
                     </div>
                 </div>
-                <div class="row p-3">
+                <div class="row my-3">
                     <div class="col m-auto">
-                        <a class="small" href="#">POLITICAS DE COOKIES</a> · <a class="small" href="#">AVISO LEGAL Y POLITICA DE PRIVACIDAD</a> · <a class="small" href="#">CONTACTO Y PUBLICIDAD</a> · <a class="small" href="#">TIENDA</a>
+                        <span class="text-white grey-hover"><a class="small text-white" href="#">POLITICAS DE COOKIES</a> · <a class="small text-white" href="#">AVISO LEGAL Y POLITICA DE PRIVACIDAD</a> · <a class="small text-white" href="#">CONTACTO Y PUBLICIDAD</a> · <a class="small text-white" href="#">TIENDA</a></span>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-3 m-auto d-flex flex-column justify-content-center align-items-center">
+                        <span class="small text-white">CON EL APOYO TECNOLÓGICO DE</span>
+                        <img class="w-25 py-3" src="img/icm-logo-1.png">
+                        <span class="small text-white">COPY EL MUNDO TOMORROW</span>
                     </div>
                 </div>
             </div>
