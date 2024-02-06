@@ -1,0 +1,26 @@
+/* Define standard variables and values for website */
+/* Use the variables */
+body {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.promoCode {
+  color: green;
+}
+
+.finalButton {
+  background-color: blue;
+  color: white;
+}
+
+.textoEspecialGris {
+  color: rgb(151, 151, 151);
+}
+
+.textoEspecialMenosGris {
+  color: rgb(68, 67, 67);
+}
+
+/*# sourceMappingURL=index.css.map */

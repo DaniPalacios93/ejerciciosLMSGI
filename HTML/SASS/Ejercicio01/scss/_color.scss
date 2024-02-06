@@ -1,0 +1,35 @@
+/* Define standard variables and values for website */
+$bgcolor: white;
+$textcolor: black;
+$fontsize: 18px;
+$promoCodeColor: green;
+$buttonBackground: blue;
+
+@mixin color($color){
+    color: $color;
+}
+
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+.promoCode {
+    color: $promoCodeColor;
+}
+
+.finalButton {
+    background-color: $buttonBackground;
+    color: $bgcolor;
+}
+
+.textoEspecialGris {
+    @include color(rgb(151, 151, 151));
+}
+
+.textoEspecialMenosGris {
+    @include color(rgb(68, 67, 67))
+}
